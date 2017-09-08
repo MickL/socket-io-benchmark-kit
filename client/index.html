@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-8">
+                <div id="connect">
+                    <h4>Connect to Socket.io Server:</h4>
+                    <div class="input-group">
+                        <input type="text" id="input-url" class="form-control" placeholder="Server-IP / URL with port">
+                        <div class="input-group-btn">
+                            <div class="btn btn-primary" id="btn-connect">Connect</div>
+                        </div>
+                    </div>
+                    <small class="form-text text-muted">
+                        E.g. http://localhost:3000
+                    </small>
+                </div>
+
+                <div id="connection" style="display:none;">
+                    <div class="alert alert-danger" id="alert"></div>
+                    <div class="text-success float-right small" id="connected-info">Connected</div>
+
+                    <div id="emit">
+                        <div id="emit-container">
+                            <h4>Emit message:</h4>
+                            <div class="input-group">
+                                <input type="text" id="input-msg" class="form-control" placeholder="Message">
+                                <div class="input-group-btn">
+                                    <div class="btn btn-primary" id="btn-emit">Emit</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Received messages:</h4>
+                    <div id="message-results">
+                        <!-- If connected, emitted messages will be added here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="vendor/moment.min.js"></script>
+
+    <script src="vendor/jquery-3.2.1.slim.min.js"></script>
+    <script src="vendor/socket.io.js"></script>
+    <script src="client.js?v=1"></script>
+</body>
+</html>

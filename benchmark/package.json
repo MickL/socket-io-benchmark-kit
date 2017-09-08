@@ -1,0 +1,16 @@
+{
+  "name": "brandung-socket-test.benchmark",
+  "version": "0.0.2",
+  "author": "Mick Lawitzke <mick.lawitzke@brandung.de>",
+  "description": "Benchmark using Artillery to stress-test the server",
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10"
+  },
+  "scripts": {
+    "start": "artillery run test.yml"
+  },
+  "dependencies": {
+    "artillery": "^1.6.0-6"
+  }
+}

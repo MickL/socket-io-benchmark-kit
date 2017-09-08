@@ -1,0 +1,12 @@
+config:
+  target: "http://localhost:3000"
+  phases:
+    - duration: 500
+      arrivalRate: 25 # 25 is the maximum before a single cpu-core goes to high (AWS EC2 m3.xlarge)
+  socketio:
+    transports: ["websocket"]
+
+scenarios:
+    - engine: "socketio"
+      flow:
+        - think: 3600

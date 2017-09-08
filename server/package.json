@@ -1,0 +1,22 @@
+{
+  "name": "brandung-socket-test.server",
+  "version": "0.0.1",
+  "author": "Mick Lawitzke <mick.lawitzke@brandung.de>",
+  "description": "Simple Socket Server using multiple cores",
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10"
+  },
+  "scripts": {
+    "start": "node --nouse-idle-notification --expose-gc --max-old-space-size=8192 ./main.js",
+    "start2": "node --max-old-space-size=8192 ./main.js"
+  },
+  "dependencies": {
+    "cluster": "^0.7.7",
+    "express": "^4.15.4",
+    "farmhash": "^2.0.0",
+    "log-buffer": "0.0.3",
+    "socket.io": "^2.0.3",
+    "socket.io-adapter-mongo": "git://github.com/lklepner/socket.io-adapter-mongo.git#v2.0.0"
+  }
+}

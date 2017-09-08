@@ -1,0 +1,19 @@
+.btn {
+    cursor: pointer;
+}
+
+.container {
+    margin-top: 60px;
+}
+
+.message {
+    padding: 5px 0;
+}
+
+.message span {
+    margin-right: 15px;
+}
+
+#emit {
+    margin-bottom: 60px;
+}
